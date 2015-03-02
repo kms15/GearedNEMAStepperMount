@@ -1,7 +1,7 @@
 // Used to hold the extruder on a Kossel printer without zip-ties
 $fn=60;
 
-m3Clearance = 0.25;
+m3Clearance = 0.5;
 m3Diameter = 3;
 m3NutDiameter = 6;
 m3NutThickness = 2.4;
