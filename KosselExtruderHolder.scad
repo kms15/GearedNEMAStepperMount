@@ -15,9 +15,8 @@ module m3NutTrap(h = m3NutThickness) {
 
 SHCSFloorHeight = 3;
 SHCSCounterboreDepth = m3SHCSHeadHeight + 2 * m3Clearance;
-blockHeight = SHCSFloorHeight + SHCSCounterboreDepth;
+blockDepth = SHCSFloorHeight + SHCSCounterboreDepth;
 blockWallThickness = 2;
-blockWidth = m3NutDiameter + blockWallThickness;
 
 overcut = 1;
 gearBoxDiameter = 36;
@@ -26,10 +25,10 @@ ringHeight = 12;
 ringGap = 3;
 
 gapBlockWidth = ringThickness + 2*blockWallThickness + m3NutDiameter;
-gapBlockDepth = 2*blockHeight + ringGap;
+gapBlockDepth = 2*blockDepth + ringGap;
 
 mountingBlockWidth = 2*blockWallThickness + m3NutDiameter;
-mountingBlockDepth = blockHeight;
+mountingBlockDepth = blockDepth;
 mountingBlockHeight = 40;
 
 filletRadius = 10;
