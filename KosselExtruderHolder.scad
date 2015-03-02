@@ -8,9 +8,9 @@ m3NutThickness = 2.4;
 m3SHCSHeadDiameter = 5.5;
 m3SHCSHeadHeight = 3;
 
-module m3NutTrap(h = m3NutThickness) {
+module m3NutTrap(h = m3NutThickness + 2 * m3Clearance) {
     $fn=6;
-    cylinder(h=h, r=m3NutDiameter/2);
+    cylinder(h=h, r=m3NutDiameter/2 + m3Clearance);
 }
 
 SHCSFloorHeight = 3;
@@ -24,10 +24,10 @@ ringThickness = 2;
 ringHeight = 12;
 ringGap = 3;
 
-gapBlockWidth = ringThickness + 2*blockWallThickness + m3NutDiameter;
+gapBlockWidth = ringThickness + 2*blockWallThickness + m3NutDiameter + 2 * m3Clearance;
 gapBlockDepth = 2*blockDepth + ringGap;
 
-mountingBlockWidth = 2*blockWallThickness + m3NutDiameter;
+mountingBlockWidth = 2*blockWallThickness + m3NutDiameter + 2 * m3Clearance;
 mountingBlockDepth = blockDepth;
 mountingBlockHeight = 40;
 
