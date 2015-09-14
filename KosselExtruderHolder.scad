@@ -1,5 +1,5 @@
 // Used to hold the extruder on a Kossel printer without zip-ties
-$fn=60;
+$fn=120;
 
 m3Clearance = 0.5;
 m3Diameter = 3;
@@ -27,7 +27,7 @@ ringGap = 3;
 gapBlockWidth = ringThickness + 2*blockWallThickness + m3NutDiameter + 2 * m3Clearance;
 gapBlockDepth = 2*blockDepth + ringGap;
 
-mountingBlockWidth = 2*blockWallThickness + m3NutDiameter + 2 * m3Clearance;
+mountingBlockWidth = 15; // 2*blockWallThickness + m3NutDiameter + 2 * m3Clearance;
 mountingBlockDepth = blockDepth;
 mountingBlockHeight = 40;
 
