@@ -134,6 +134,7 @@ difference() {
                 h=SHCSCounterboreDepth + filletRadius);
             translate([0, 0,
                     filletRadius + gapBlockDepth - SHCSCounterboreDepth])
+                rotate([0,0,30])
                 m3NutTrap(SHCSCounterboreDepth + filletRadius);
         }
 
